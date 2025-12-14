@@ -1,3 +1,4 @@
+
 # 🍬 Sweet Shop Management System
 
 A modern, full-stack web application designed for managing a boutique sweet shop. This system allows customers to browse and purchase sweets, while providing administrators with tools to manage inventory, update stock, and handle product listings.
@@ -116,4 +117,3 @@ This project was developed with the assistance of **Antigravity**, an advanced A
 
 ---
 
-*Project developed for Assessment - 2025*
