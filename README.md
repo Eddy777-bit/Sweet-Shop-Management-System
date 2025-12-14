@@ -115,5 +115,13 @@ This project was developed with the assistance of **Antigravity**, an advanced A
 *   **Refactoring & Enhancement**: The AI refactored the frontend to introduce `framer-motion` animations, `react-hot-toast` notifications, and role-based conditional rendering.
 *   **Debugging**: Assisted in resolving dependency issues (Maven/NPM) and fixing CORS configuration errors.
 
----
+## 🚀 Live Application
+
+The project is fully functional and deployed on **Vercel**.
+
+🔗 **Live URL:**  
+https://sweet-shop-client-lz7ozkl05-sailishthakur15-gmailcoms-projects.vercel.app
+
+This is a **working live application hosted on Vercel**, allowing users to access and use the application in real time.
+
 
