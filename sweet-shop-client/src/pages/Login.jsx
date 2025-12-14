@@ -20,8 +20,9 @@ export default function Login() {
             toast.success("Welcome back! 🍬");
             navigate('/');
         } catch (err) {
-            setError('Invalid credentials');
-            toast.error("Invalid username or password");
+            console.error("Login failed:", err); // Log the full error
+            setError('Invalid credentials or server error');
+            toast.error("Login failed: " + (err.response?.data?.message || "Verify your backend connection"));
         }
     };
 
