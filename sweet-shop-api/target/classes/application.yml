@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: sweet-shop-api
+  data:
+    mongodb:
+      uri: mongodb+srv://sailishthakur15_db:Eddy5678@cluster0.vggtjhs.mongodb.net/sweetshop?retryWrites=true&w=majority
+      auto-index-creation: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    com.sweetshop.api: DEBUG
+
+jwt:
+  secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970 # Just a random 256-bit key for dev
+  expiration: 86400000 # 1 day

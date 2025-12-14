@@ -1,0 +1,14 @@
+C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\main\java\com\sweetshop\api\config\SecurityConfig.java
+C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\main\java\com\sweetshop\api\controller\AuthController.java
+C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\main\java\com\sweetshop\api\controller\SweetController.java
+C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\main\java\com\sweetshop\api\dto\AuthResponse.java
+C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\main\java\com\sweetshop\api\dto\LoginRequest.java
+C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\main\java\com\sweetshop\api\dto\RegisterRequest.java
+C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\main\java\com\sweetshop\api\dto\SweetDto.java
+C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\main\java\com\sweetshop\api\model\Sweet.java
+C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\main\java\com\sweetshop\api\model\User.java
+C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\main\java\com\sweetshop\api\repository\SweetRepository.java
+C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\main\java\com\sweetshop\api\repository\UserRepository.java
+C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\main\java\com\sweetshop\api\service\AuthService.java
+C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\main\java\com\sweetshop\api\service\SweetService.java
+C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\main\java\com\sweetshop\api\SweetShopApiApplication.java

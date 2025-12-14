@@ -1,0 +1,102 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.sweetshop:sweet-shop-api >--------------------
+[INFO] Building sweet-shop-api 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ sweet-shop-api ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ sweet-shop-api ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ sweet-shop-api ---
+[INFO] skip non existing resourceDirectory C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ sweet-shop-api ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.2:test (default-test) @ sweet-shop-api ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.sweetshop.api.controller.AuthControllerTest
+20:29:10.784 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.sweetshop.api.controller.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:29:11.045 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.sweetshop.api.SweetShopApiApplication for test class com.sweetshop.api.controller.AuthControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2025-12-13T20:29:11.561+05:30  INFO 11284 --- [sweet-shop-api] [           main] c.s.api.controller.AuthControllerTest    : Starting AuthControllerTest using Java 24.0.2 with PID 11284 (started by SAILISH THAKUR in C:\Users\SAILISH THAKUR\Desktop\codes\ASSESSMENT\sweet-shop-api)
+2025-12-13T20:29:11.563+05:30 DEBUG 11284 --- [sweet-shop-api] [           main] c.s.api.controller.AuthControllerTest    : Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-12-13T20:29:11.563+05:30  INFO 11284 --- [sweet-shop-api] [           main] c.s.api.controller.AuthControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2025-12-13T20:29:13.518+05:30  WARN 11284 --- [sweet-shop-api] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 38440bd2-3e55-40a6-85e3-e22760b7ec3d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-13T20:29:13.576+05:30  INFO 11284 --- [sweet-shop-api] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-13T20:29:13.778+05:30  INFO 11284 --- [sweet-shop-api] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-12-13T20:29:13.778+05:30  INFO 11284 --- [sweet-shop-api] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-12-13T20:29:13.779+05:30  INFO 11284 --- [sweet-shop-api] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-12-13T20:29:13.805+05:30  INFO 11284 --- [sweet-shop-api] [           main] c.s.api.controller.AuthControllerTest    : Started AuthControllerTest in 2.673 seconds (process running for 3.995)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/auth/register
+       Parameters = {}
+          Headers = [Content-Type:"application/json", Content-Length:"48"]
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.sweetshop.api.controller.AuthController
+           Method = com.sweetshop.api.controller.AuthController#register(RegisterRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.475 s -- in com.sweetshop.api.controller.AuthControllerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.961 s
+[INFO] Finished at: 2025-12-13T20:29:14+05:30
+[INFO] ------------------------------------------------------------------------
