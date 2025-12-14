@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import api from '../api/axios';
 import { LogOut, Plus, ShoppingBag, Trash, Search, DollarSign, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import toast from 'react-hot-toast';
@@ -26,9 +26,7 @@ export default function Home() {
 
   const fetchSweets = async (token) => {
     try {
-      const response = await axios.get('/api/sweets', {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+      const response = await api.get('/sweets');
       setSweets(response.data);
     } catch (error) {
       console.error('Failed to fetch sweets', error);
@@ -51,9 +49,7 @@ export default function Home() {
 
     const token = localStorage.getItem('token');
     try {
-      await axios.delete(`/api/sweets/${id}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+      await api.delete(`/sweets/${id}`);
       toast.success("Sweet deleted from inventory");
       fetchSweets(token);
     } catch (error) {
@@ -67,9 +63,7 @@ export default function Home() {
 
     const token = localStorage.getItem('token');
     try {
-      await axios.post(`/api/sweets/${sweet.id}/purchase`, {}, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+      await api.post(`/sweets/${sweet.id}/purchase`, {});
       toast.success(`Purchased ${sweet.name}!`, {
         icon: '🍬',
         style: {
@@ -89,9 +83,7 @@ export default function Home() {
     e.preventDefault();
     const token = localStorage.getItem('token');
     try {
-      await axios.post('/api/sweets', newSweet, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+      await api.post('/sweets', newSweet);
       setShowAddModal(false);
       setNewSweet({ name: '', category: '', price: '', quantity: '' });
       fetchSweets(token);

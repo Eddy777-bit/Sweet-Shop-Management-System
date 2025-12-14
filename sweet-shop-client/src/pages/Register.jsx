@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import api from '../api/axios';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { User, Lock, UserPlus, Shield } from 'lucide-react';
@@ -15,7 +15,7 @@ export default function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('/api/auth/register', { username, password, role });
+            await api.post('/auth/register', { username, password, role });
             toast.success("Registration successful! Please login.");
             navigate('/login');
         } catch (err) {

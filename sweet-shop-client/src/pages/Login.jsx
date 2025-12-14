@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import api from '../api/axios';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { User, Lock, ArrowRight } from 'lucide-react';
@@ -14,7 +14,7 @@ export default function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('/api/auth/login', { username, password });
+            const response = await api.post('/auth/login', { username, password });
             localStorage.setItem('token', response.data.token);
             localStorage.setItem('role', response.data.role);
             toast.success("Welcome back! 🍬");
